@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/telegram_1"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:weightSum="10"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:src="@drawable/mygrandma"
+            android:layout_gravity="center"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="6"
+            android:background="@color/dark"
+            android:text="My Grand Ma"
+            android:textSize="24sp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:src="@drawable/attachment"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/m_filed_message"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="9"
+            android:background="@drawable/background"
+            android:hint="Message"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck" />
+        <ImageView
+            android:id="@+id/m_send"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:src="@drawable/send"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+  </RelativeLayout>
